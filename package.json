@@ -1,0 +1,54 @@
+{
+    "name": "playwright-automation-template",
+    "version": "1.0.0",
+    "description": "Production-ready Playwright automation template for Web and API Testing with TypeScript",
+    "main": "index.js",
+    "scripts": {
+        "test": "playwright test",
+        "test:headed": "playwright test --headed",
+        "test:ui": "playwright test --ui",
+        "test:web": "playwright test --project=chromium",
+        "test:api": "playwright test --project=api-tests",
+        "test:staging": "cross-env TEST_ENV=staging playwright test",
+        "test:uat": "cross-env TEST_ENV=uat playwright test",
+        "test:debug": "playwright test --debug",
+        "report": "playwright show-report",
+        "codegen": "playwright codegen",
+        "install:browsers": "playwright install",
+        "install:deps": "playwright install-deps",
+        "lint": "eslint . --ext .ts,.js",
+        "lint:fix": "eslint . --ext .ts,.js --fix",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "keywords": [
+        "playwright",
+        "automation",
+        "testing",
+        "web-testing",
+        "api-testing",
+        "e2e",
+        "typescript"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@playwright/test": "^1.40.0",
+        "@types/node": "^20.8.0",
+        "@typescript-eslint/eslint-plugin": "^6.7.0",
+        "@typescript-eslint/parser": "^6.7.0",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.50.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-playwright": "^0.18.0",
+        "prettier": "^3.0.3",
+        "typescript": "^5.2.0"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    }
+}
